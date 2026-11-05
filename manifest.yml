@@ -1,0 +1,27 @@
+display_information:
+  name: Hanabi
+  description: Cooperative fireworks card game for your team
+  background_color: "#1b1740"
+features:
+  bot_user:
+    display_name: Hanabi
+    always_online: true
+  slash_commands:
+    - command: /hanabi
+      description: Play Hanabi with your channel or group DM
+      usage_hint: "new [@players] [rainbow] | table | board | rules | end"
+      should_escape: true
+oauth_config:
+  scopes:
+    bot:
+      - commands
+      - chat:write
+      - chat:write.public
+      - im:write
+      - mpim:write
+settings:
+  interactivity:
+    is_enabled: true
+  org_deploy_enabled: false
+  socket_mode_enabled: true
+  token_rotation_enabled: false
